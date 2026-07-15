@@ -5,10 +5,11 @@ class Program
     static void Main(string[] args)
     {
         // 변수 선언 - 타입 변수명 = 초깃값;
+        // 변수명 - 카멜 케이스(camel case, 단봉낙타 표기법) : 첫 글자는 소문자로 시작 다른 키워드는 대문자로 시작
         string playerName = "Zack";
         int level;  // 정수 (int, integer)
         float hp = 100.0f;  // 실수 (float)
-        bool isDead = false;
+        bool isDead = false;    //불리언 (bool, boolean)
 
         level = 1;
         
