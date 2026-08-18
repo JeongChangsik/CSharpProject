@@ -143,7 +143,8 @@ class Program
         // Indexer 방식으로 추가 (중복시 업데이트하고 오류 X)
         shop["물약"] = 10;
         shop["검"] = 2;
-        
+
+        shop.TryGetValue("test", out int test);
         // Add로 추가(중복이 발생하면 오류 발생)
         shop.Add("마나", 3);
         

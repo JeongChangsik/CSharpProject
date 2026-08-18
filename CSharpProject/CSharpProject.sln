@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_08_TEST", "CSharp_08
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_09", "CSharp_09\CSharp_09.csproj", "{A4D7F451-7AA9-4E74-AA0A-30269A54F697}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateApp", "DelegateApp\DelegateApp.csproj", "{47CB72E3-7AAC-47F2-8B3B-33E2F226549B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateApp_02", "DelegateApp_02\DelegateApp_02.csproj", "{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,13 @@ Global
 		{A4D7F451-7AA9-4E74-AA0A-30269A54F697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D7F451-7AA9-4E74-AA0A-30269A54F697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D7F451-7AA9-4E74-AA0A-30269A54F697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47CB72E3-7AAC-47F2-8B3B-33E2F226549B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CB72E3-7AAC-47F2-8B3B-33E2F226549B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CB72E3-7AAC-47F2-8B3B-33E2F226549B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CB72E3-7AAC-47F2-8B3B-33E2F226549B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
