@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateApp", "DelegateApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateApp_02", "DelegateApp_02\DelegateApp_02.csproj", "{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPChatServer", "TCPChatServer\TCPChatServer.csproj", "{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC83DE4F-2A07-4443-AA07-A092FE6D2BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
