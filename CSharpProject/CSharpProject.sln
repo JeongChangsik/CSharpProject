@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateApp_02", "DelegateA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPChatServer", "TCPChatServer\TCPChatServer.csproj", "{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPChatClient", "TCPChatClient\TCPChatClient.csproj", "{7224DC3B-066A-4366-998A-96C45D150288}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DBE3DD4-E4C4-4683-BEEB-254CFB73E8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7224DC3B-066A-4366-998A-96C45D150288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7224DC3B-066A-4366-998A-96C45D150288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7224DC3B-066A-4366-998A-96C45D150288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7224DC3B-066A-4366-998A-96C45D150288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
