@@ -62,8 +62,8 @@ public class ChatClient : IDisposable
             Console.WriteLine($"{_serverIp}:{_serverPort} 서버 연결 중...");
             
             // TcpClient 생성 및 서버 연결
-            _tcpClient = new TcpClient(_serverIp, _serverPort);
-            await _tcpClient!.ConnectAsync(_serverIp, _serverPort);
+            _tcpClient = new TcpClient();
+            await _tcpClient.ConnectAsync(_serverIp, _serverPort);
             
             // 스트림 생성
             _stream = _tcpClient.GetStream();
@@ -84,7 +84,7 @@ public class ChatClient : IDisposable
     #region 메시지 송수신
     
     // 메시지 비동기 수신
-    private async Task ReceiveMessageAsync()
+    public async Task ReceiveMessageAsync()
     {
         if (!IsConnected || _reader == null)
         {
@@ -121,13 +121,40 @@ public class ChatClient : IDisposable
             }
             else
             {
-                Console.WriteLine($"[] {e.Message}");
+                Console.WriteLine($"[서버 연결 오류] {e.Message}");
             }
         }
         finally
         {
             Dispose();
         }
+    }
+    
+    // 메시지 전송 (비동기)
+    public async Task SendMessage(string input)
+    {
+        if (!IsConnected || _writer == null)
+        {
+            Console.WriteLine("server is not connected");
+            return;
+        }
+
+        try
+        {
+            await _writer.WriteLineAsync(input);
+        }
+        catch (Exception e)
+        {
+            if (IsConnected)
+            {
+                Console.WriteLine($"[메시지 송신 오류] {e.Message}");
+            }
+            else
+            {
+                Console.WriteLine($"[서버 연결 오류] {e.Message}");
+            }
+        }
+        
     }
 
     #endregion

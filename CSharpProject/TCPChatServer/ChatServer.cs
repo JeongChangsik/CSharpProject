@@ -68,6 +68,7 @@ public class ChatServer
                 
                 // 이벤트 구독
                 connectedClient.OnMessageReceived += OnMessageReceived;
+                connectedClient.OnDisconnected += OnDisconnectClient;
                 
                 // 연결된 클라이언트 정보 출력(EndPoint = IPAddress + Port)
                 Console.WriteLine($"[AcceptClientAsync] 현재 연결된 클라이언트 수 : {_clients.Count}");
@@ -79,6 +80,17 @@ public class ChatServer
             {
                 Console.WriteLine($"[AcceptClientAsync] {e.Message}");
             }
+        }
+    }
+
+    private void OnDisconnectClient(string clientId)
+    {
+
+        if (_clients.TryRemove(clientId, out var client))
+        {
+            client.OnMessageReceived -= OnMessageReceived;
+            client.OnDisconnected -= OnDisconnectClient;    
+            Console.WriteLine($"[OnDisconnectClient] [{clientId}] : 연결 해제");
         }
     }
 
